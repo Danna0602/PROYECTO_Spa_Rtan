@@ -1,0 +1,32 @@
+header a{
+    width: 50px;
+    margin-left: 50%; 
+    display: inline-block;
+    vertical-align: top;
+}
+header a img{
+width: 100%;
+}
+section{
+width: 80%;
+min-height: 500px;
+border: 1px solid #000;
+padding: 2; margin:0 auto;
+margin-left: 10; margin-top: 58px;
+}
+.producto{
+width: 23;
+height: 220px;
+background-color: #fafafa; 
+border:1px solid gray;
+display: inline-block;
+vertical-align: top;
+margin-left: 1; 
+margin-top: 15;
+}
+
+.producto img{
+width: 60%;
+height: 60%;
+margin:0 auto;
+}

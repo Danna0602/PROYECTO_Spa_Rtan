@@ -1,0 +1,101 @@
+body {
+    font-family: sans-serif;
+}
+
+.content{
+    width: 73%;
+    margin: 70px auto 0;
+    overflow: hidden;
+}
+
+.title{
+    color: darkred;
+    text-align: center;
+    margin: 60px 0;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.circle{
+    position: relative;
+    width: 220px;
+    height: 220px;
+    margin-bottom: 20px;
+}
+
+.circle a{
+    text-decoration: none;
+}
+
+.circle .image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-origin: -95% -40%;
+    transition: .5s;
+    z-index: 1;
+}
+
+.circle .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* Hover effect */
+
+.circle:hover .image { 
+    transform: rotate(-120deg);
+}
+
+.circle .image::before{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 0 16px rgba(255, 255, 255, .6) inset;
+}
+
+.circle .image::after{
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    background: rgb(0, 0, 0, .8);
+    top: 40%;
+    left: 95%;
+    margin: -4px 0 0 -4px;
+    border-radius: 50%;
+}
+
+.circle .info {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #263238;
+    border-radius: 50%;
+}
+
+.circle .info h3{
+    text-align: center;
+    color: #eee;
+    margin: 35px 35px 0;
+    padding: 15px 5px 25px;
+    border-bottom: 1px solid #777;
+}
+
+.circle .info p{
+    text-align: center;
+    color: #999;
+    padding: 0 10px;
+    font-style: inherit;
+}
+
